@@ -5,7 +5,7 @@ const { getWeatherData } = require('./apiFunctions');
 
 const PORT = 1337 || process.env.PORT;
 
-app.usse(express.json());
+app.use(express.json());
 app.use(cors());
 
 app.get('/local', (req, res) => {
