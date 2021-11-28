@@ -3,14 +3,14 @@ const app = require('express')();
 const cors = require('cors');
 const { getWeatherData } = require('./apiFunctions');
 
-const PORT = 1337 || process.env.PORT;
+const PORT = 1774;
 
 app.use(express.json());
 app.use(cors());
 
 app.get('/local', (req, res) => {
   const params = {
-    zip: req.query.zipcode,
+    zipcode: req.query.zipcode,
     appid: req.query.apikey,
     units: 'imperial',
   };
