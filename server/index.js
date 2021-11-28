@@ -3,7 +3,7 @@ const app = require('express')();
 const cors = require('cors');
 const { getWeatherData } = require('./apiFunctions');
 
-const PORT = 1774;
+const PORT = 1774 || process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
