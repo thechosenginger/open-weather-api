@@ -4,6 +4,17 @@
 
 // const { expect } = chai;
 
+/**
+ * TODO:
+ * return an object
+ * object is not empty
+ * object contains keys: city, conditions, temp_high, temp_low
+ * object contents are valid
+ * test zip code bing entered
+ * test response time
+ *
+ */
+
 // // const server = require('../server/index');
 
 // // const { PORT } = server;
